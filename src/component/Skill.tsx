@@ -1,17 +1,17 @@
 const Skill = () => {
     const skills = [
-        { id: 1, image: "public/icons8-html-64.png", name: "HTML 5" },
-        { id: 2, image: "public/icons8-css-48.png", name: "CSS" },
-        { id: 3, image: "public/icons8-java-48.png", name: "JAVA" },
-        { id: 4, image: "public/javascript.png", name: "JAVASCRIPT" },
-        { id: 5, image: "public/python.png", name: "Python" },
-        { id: 6, image: "public/icons8-mysql-48.png", name: "MySQL" },
-        { id: 7, image: "public/mongo.png", name: "MongoDB" },
-        { id: 8, image: "public/react.png", name: "React" },
-        { id: 9, image: "public/typeScript.png", name: "TypeScript" },
-        { id: 11, image: "public/node.png", name: "Node.js" },
-        { id: 12, image: "public/react.png", name: "React Native" },
-        { id: 8, image: "public/springboot.png", name: "SpringBoot" },
+        { id: 1, image: "icons8-html-64.png", name: "HTML 5" },
+        { id: 2, image: "icons8-css-48.png", name: "CSS" },
+        { id: 3, image: "icons8-java-48.png", name: "JAVA" },
+        { id: 4, image: "javascript.png", name: "JAVASCRIPT" },
+        { id: 5, image: "python.png", name: "Python" },
+        { id: 6, image: "icons8-mysql-48.png", name: "MySQL" },
+        { id: 7, image: "mongo.png", name: "MongoDB" },
+        { id: 8, image: "react.png", name: "React" },
+        { id: 9, image: "typeScript.png", name: "TypeScript" },
+        { id: 11, image: "node.png", name: "Node.js" },
+        { id: 12, image: "react.png", name: "React Native" },
+        { id: 8, image: "springboot.png", name: "SpringBoot" },
 
     ];
 

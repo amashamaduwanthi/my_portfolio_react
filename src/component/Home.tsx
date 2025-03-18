@@ -30,7 +30,7 @@ const Home = () => {
             {/* Profile Image Positioned to Left */}
             <div className="home-image md:w-1/2 mx-auto md:mx-0 md:mr-12 order-1 md:order-none">
                 <img
-                    src="../../public/WhatsApp_Image_2025-03-17_at_20.44.11-removebg-preview.png"
+                    src="WhatsApp_Image_2025-03-17_at_20.44.11-removebg-preview.png"
                     alt="About Me"
                     className="w-10/12 rounded-lg shadow-lg transform transition duration-500 hover:scale-105"
                 />

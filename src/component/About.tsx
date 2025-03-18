@@ -5,7 +5,7 @@ const About = () => {
                 {/* About Image */}
                 <div className="about-img md:w-1/2 mb-12 md:mb-0">
                     <img
-                        src="../../public/WhatsApp_Image_2025-03-17_at_20.44.11-removebg-preview.png"
+                        src="WhatsApp_Image_2025-03-17_at_20.44.11-removebg-preview.png"
                         alt="About Me"
                         className="w-10/12 rounded-lg shadow-lg transform transition duration-500 hover:scale-105"
                     />
