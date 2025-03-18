@@ -1,0 +1,21 @@
+/* Custom Styles for Home Section */
+.home-content h1 {
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 1.125rem;
+    color: #4b5563; /* Slightly darker text */
+}
+
+.home-content .social-media a:hover {
+    transform: scale(1.1);
+}
+
+.home-image img {
+    transition: transform 0.3s ease;
+}
+
+.home-image img:hover {
+    transform: scale(1.05);
+}
