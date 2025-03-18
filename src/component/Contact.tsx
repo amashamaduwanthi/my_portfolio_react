@@ -1,7 +1,23 @@
 import { useState } from "react";
 
+interface FormData {
+    fullName: string;
+    email: string;
+    mobile: string;
+    subject: string;
+    message: string;
+}
+
+interface Errors {
+    fullName?: string;
+    email?: string;
+    mobile?: string;
+    subject?: string;
+    message?: string;
+}
+
 const Contact = () => {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<FormData>({
         fullName: "",
         email: "",
         mobile: "",
@@ -9,10 +25,10 @@ const Contact = () => {
         message: "",
     });
 
-    const [errors, setErrors] = useState({});
+    const [errors, setErrors] = useState<Errors>({});
     const [loading, setLoading] = useState(false);
 
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
             ...prevData,
@@ -21,7 +37,7 @@ const Contact = () => {
     };
 
     const validateForm = () => {
-        const newErrors = {};
+        const newErrors: Errors = {};
         if (!formData.fullName) newErrors.fullName = "Full Name is required.";
         if (!formData.email) newErrors.email = "Email is required.";
         if (formData.email && !/\S+@\S+\.\S+/.test(formData.email))
@@ -32,7 +48,7 @@ const Contact = () => {
         return newErrors;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         const validationErrors = validateForm();
@@ -126,14 +142,14 @@ const Contact = () => {
                 </div>
 
                 <div className="mt-6">
-                    <textarea
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="Your Message"
-                        rows="6"
-                        className="w-full p-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    ></textarea>
+          <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Your Message"
+              rows={6}
+              className="w-full p-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          ></textarea>
                     {errors.message && (
                         <p className="text-red-500 text-sm mt-2">{errors.message}</p>
                     )}
@@ -142,7 +158,7 @@ const Contact = () => {
                 <div className="mt-6 flex justify-center">
                     <button
                         type="submit"
-                        className={`btn bg-blue-600 text-white py-3 px-6 rounded-md ${loading ? "cursor-not-allowed" : ""}`}
+                        className={`btn bg-gradient-to-r from-blue-500 to-teal-400 text-white py-3 px-6 rounded-md ${loading ? "cursor-not-allowed" : ""}`}
                         disabled={loading}
                     >
                         {loading ? "Sending..." : "Send Message"}
