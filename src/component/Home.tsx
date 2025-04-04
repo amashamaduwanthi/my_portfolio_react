@@ -66,7 +66,7 @@ const Home = () => {
 
                 {/* Download CV Button */}
                 <a
-                    href="#"
+                    href="my cv.pdf"
                     className="btn mt-8 inline-block bg-gradient-to-r from-blue-500 to-teal-400 text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-gradient-to-l hover:from-teal-400 hover:to-blue-500 transition duration-300 transform hover:scale-105"
                 >
                     Download CV
